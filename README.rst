@@ -1,4 +1,4 @@
-Electrum - Lightweight Bitcoin client
+DO NOT USE! THIS IS AN EXAMPLE OF HOW TO COMPROMISE THIS WALLET
 =====================================
 
 ::
